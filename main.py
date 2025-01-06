@@ -9,12 +9,12 @@ def start(message):
     markup = types.InlineKeyboardMarkup()
 
     button = types.InlineKeyboardButton(
-        "Открыть приложение",
+        "ilovani ochish",
         web_app=types.WebAppInfo(url="https://hubsavdo.netlify.app/")
     )
     markup.add(button)
     
-    bot.send_message(message.chat.id, "Добро пожаловать в SavdoHub! 🌟", reply_markup=markup)
+    bot.send_message(message.chat.id, "SavdoHub — bu O'zbekistonda tovarlarni sotish va xarid qilish uchun mo'ljallangan savdo platformasi. Foydalanuvchilar Telegram orqali o'z e'lonlarini joylashtirib, mahsulotlarni sotib olish va sotish imkoniyatiga ega bo'lishadi. Shuningdek, ilova ichida o'z biznesini ochish imkoniyati ham mavjud.", reply_markup=markup)
 
 # Запуск бота
 bot.polling()
